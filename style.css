@@ -229,7 +229,7 @@ a {
     }
 }
 
-.main {
+.main_container {
     background-color: black;
     height: 92vh;
     width: 100vw;
@@ -238,6 +238,11 @@ a {
     grid-template-rows: 88% 11%;
     gap: 0.5rem;
     padding: 0.25rem 0.5rem;
+}
+
+.sidebar {
+    background-color: #121212;
+    border-radius: 0.6rem;
 }
 
 .library {
@@ -302,6 +307,7 @@ a {
     margin: 0.6rem 0 0 0.6rem;
     cursor: pointer;
 }
+
 .box-but:hover {
     transform: scale(1.05);
 }
@@ -366,11 +372,6 @@ a {
 .language:hover {
     border: 0.8px solid white;
     transform: scale(1.05);
-}
-
-.mm {
-    background-color: #121212;
-    border-radius: 0.6rem;
 }
 
 .main-content {
@@ -639,4 +640,21 @@ a {
 
 .sign-up:hover {
     transform: scale(1.05);
+}
+
+.main-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+.main-content::-webkit-scrollbar-thumb:hover {
+    background: #888;
 }
